@@ -1,46 +1,449 @@
-<!-- about.html (About Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - About</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Sushi Harmony - Fresh sushi, premium nigiri, and authentic Japanese cuisine in Egypt. Halal-friendly preparation.">
+    <title>Sushi Harmony | Fresh Japanese Cuisine</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4845bc06da.js" crossorigin="anonymous"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">My Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
-            </ul>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <i class="fas fa-fish"></i>
+                <span>Sushi Harmony</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#reserve" class="nav-link">Reserve</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
-    <section class="about">
-        <h1>About Me</h1>
-        <p>Hi, I'm a frontend developer with over 5 years of experience in building modern web applications using HTML, CSS, JavaScript, and frameworks like React and Vue.js.</p>
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><i class="fas fa-code"></i> HTML5 & CSS3</li>
-            <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
-            <li><i class="fab fa-react"></i> React.js</li>
-            <li><i class="fab fa-vuejs"></i> Vue.js</li>
-            <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
-            <li><i class="fas fa-paint-brush"></i> UI/UX Principles</li>
-        </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Discover Fresh Sushi Mastery</h1>
+            <p class="hero-subtitle">Premium nigiri, vibrant rolls & steaming ramen — crafted daily</p>
+            <div class="hero-buttons">
+                <a href="#reserve" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Reserve Table
+                </a>
+                <a href="#menu" class="btn btn-secondary">
+                    <i class="fas fa-utensils"></i> View Menu
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Welcome to Sushi Harmony</h2>
+                <p class="section-subtitle">Where tradition meets excellence</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the finest, freshest seafood daily to ensure every bite is a taste of the ocean's best.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Halal Friendly</h3>
+                    <p>Our sushi rice is prepared without mirin or alcohol, making our dishes suitable for everyone.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Master Crafted</h3>
+                    <p>Each piece is handcrafted by our experienced chefs who bring authentic Japanese techniques to Egypt.</p>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <p>At Sushi Harmony, we bring authentic Japanese flavors to Egypt with the freshest seafood and halal-friendly preparation. Every dish is a celebration of taste, texture, and artistry — from our signature nigiri to our vibrant maki rolls and steaming bowls of ramen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Signature Dishes</h2>
+                <p class="section-subtitle">A visual feast for your senses</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?w=800&q=80" alt="Salmon Nigiri">
+                    <div class="gallery-overlay">
+                        <h3>Salmon Nigiri</h3>
+                        <p>Premium fresh salmon</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&q=80" alt="Rainbow Roll">
+                    <div class="gallery-overlay">
+                        <h3>Rainbow Roll</h3>
+                        <p>Colorful & delicious</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=80" alt="California Roll">
+                    <div class="gallery-overlay">
+                        <h3>California Roll</h3>
+                        <p>Classic favorite</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80" alt="Ramen Bowl">
+                    <div class="gallery-overlay">
+                        <h3>Tonkotsu Ramen</h3>
+                        <p>Rich & savory broth</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=800&q=80" alt="Spicy Tuna Roll">
+                    <div class="gallery-overlay">
+                        <h3>Spicy Tuna Roll</h3>
+                        <p>Perfect heat balance</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1564489563601-c53cfc451e93?w=800&q=80" alt="Dragon Roll">
+                    <div class="gallery-overlay">
+                        <h3>Dragon Roll</h3>
+                        <p>Artistic presentation</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=800&q=80" alt="Sashimi Platter">
+                    <div class="gallery-overlay">
+                        <h3>Sashimi Platter</h3>
+                        <p>Pure & fresh</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607301406259-dfb186e15de8?w=800&q=80" alt="Tempura">
+                    <div class="gallery-overlay">
+                        <h3>Shrimp Tempura</h3>
+                        <p>Crispy perfection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section class="menu section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Menu Highlights</h2>
+                <p class="section-subtitle">Taste the best of Japanese cuisine</p>
+            </div>
+            
+            <div class="menu-categories">
+                <!-- Nigiri -->
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-fish"></i> Premium Nigiri
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?w=800&q=80" alt="Salmon Nigiri">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Salmon Nigiri</h4>
+                                    <span class="price">120 EGP</span>
+                                </div>
+                                <p>Fresh Atlantic salmon on seasoned sushi rice</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&q=80" alt="Tuna Nigiri">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Tuna Nigiri</h4>
+                                    <span class="price">140 EGP</span>
+                                </div>
+                                <p>Premium yellowfin tuna, melt-in-your-mouth</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rolls -->
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-layer-group"></i> Signature Rolls
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=800&q=80" alt="Rainbow Roll">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Rainbow Roll</h4>
+                                    <span class="price">180 EGP</span>
+                                </div>
+                                <p>California roll topped with assorted sashimi</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1564489563601-c53cfc451e93?w=800&q=80" alt="Dragon Roll">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Dragon Roll</h4>
+                                    <span class="price">160 EGP</span>
+                                </div>
+                                <p>Shrimp tempura with avocado & eel sauce</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hot Bowls -->
+                <div class="menu-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-fire"></i> Hot Bowls
+                    </h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80" alt="Ramen">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Tonkotsu Ramen</h4>
+                                    <span class="price">150 EGP</span>
+                                </div>
+                                <p>Rich pork broth, noodles, egg & vegetables</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Teriyaki Bowl">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4>Salmon Teriyaki Bowl</h4>
+                                    <span class="price">170 EGP</span>
+                                </div>
+                                <p>Grilled salmon with teriyaki glaze & rice</p>
+                                <span class="badge">Halal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-action">
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-book-open"></i> View Full Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section" id="reserve">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-subtitle">Join us for an unforgettable dining experience</p>
+            </div>
+            
+            <div class="reservation-content">
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Full Name
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Phone / WhatsApp
+                            </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+20 XXX XXX XXXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar"></i> Date
+                            </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i> Time
+                            </label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">
+                                <i class="fas fa-users"></i> Guests
+                            </label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6+">6+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">
+                            <i class="fas fa-comment"></i> Special Requests (Optional)
+                        </label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Dietary restrictions, special occasions, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-check-circle"></i> Confirm Reservation
+                    </button>
+                </form>
+                
+                <div class="reservation-divider">
+                    <span>OR</span>
+                </div>
+                
+                <div class="reservation-whatsapp">
+                    <h3>Book via WhatsApp</h3>
+                    <p>Prefer to chat? Send us a message directly</p>
+                    <a href="https://wa.me/201234567890" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sushi Harmony</h3>
+                    <p>Experience the art of Japanese cuisine with every bite. Fresh, authentic, and unforgettable.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Nile Street, Cairo, Egypt</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+20 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@sushiharmony.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Monday - Thursday</span>
+                            <span>12:00 PM - 11:00 PM</span>
+                        </li>
+                        <li>
+                            <span>Friday - Saturday</span>
+                            <span>12:00 PM - 12:00 AM</span>
+                        </li>
+                        <li>
+                            <span>Sunday</span>
+                            <span>1:00 PM - 10:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sushi Harmony. All rights reserved. | Developed with <i class="fas fa-heart"></i> by <a href="https://github.com/Batoul2020" target="_blank">Batoul2020</a></p>
+            </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
